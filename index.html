@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-Shirt.akh</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="pngwing.com.png">
+</head>
+<body class="box1">
+
+<div class="box2" id="authOverlay">
+<div class="box3">
+<div class="box4">
+<h2 class="box5">T-Shirt<span>.akh</span></h2>
+<p class="box6">Please sign in to access the boutique collection.</p>
+</div>
+<button type="button" class="box7 action-btn" id="googleAuthBtn">
+<i class="fa-brands fa-google box8"></i> Continue with Google
+</button>
+<div class="box9"><span>OR</span></div>
+<div class="box10">
+<div class="box11">
+<label class="box12">Username</label>
+<div class="box13">
+<i class="fa-solid fa-user box14"></i>
+<input type="text" class="box15" id="loginUsername" placeholder="Xusanboy" required>
+</div>
+</div>
+<div class="box16">
+<label class="box17">Password</label>
+<div class="box18">
+<i class="fa-solid fa-lock box19"></i>
+<input type="password" class="box20" id="loginPassword" placeholder="1234" required>
+</div>
+</div>
+<div class="box21" id="authErrorMsg"></div>
+<div class="box22" id="lockoutTimerMsg"></div>
+<button type="button" class="box23 action-btn" id="loginSubmitBtn">
+<i class="fa-solid fa-right-to-bracket box24"></i> Sign In
+</button>
+</div>
+<div class="box25">
+<p class="box26">Login: <strong>Xusanboy</strong> | Pass: <strong>1234</strong></p>
+</div>
+</div>
+</div>
+
+<header class="box27">
+<div class="box28">
+<a href="#" class="box29">T-Shirt<span>.akh</span></a>
+<nav class="box30">
+<a href="#hero" class="box31">Home</a>
+<a href="#about" class="box32">Quality</a>
+<a href="#livezone" class="box33">Live Effect</a>
+<a href="#interactive" class="box34">Studio</a>
+<a href="#collections" class="box35">Catalog</a>
+<a href="#fitcalc" class="box36">Fit & BMI</a>
+<a href="#contact" class="box37">Contact</a>
+</nav>
+<div class="box38">
+<button class="box39" id="spinWheelBtn" title="Spin Lucky Discount Wheel"><i class="fa-solid fa-gift box40"></i></button>
+<button class="box41" id="wishlistOpenBtn" title="Wishlist">
+<i class="fa-solid fa-heart box42"></i>
+<span class="box43" id="wishlistBadge">0</span>
+</button>
+<button class="box44" id="cartOpenBtn" title="Cart">
+<i class="fa-solid fa-bag-shopping box45"></i>
+<span class="box46" id="cartBadge">0</span>
+</button>
+</div>
+</div>
+</header>
+
+<main class="box47">
+
+<section class="box48 scroll-reveal" id="hero">
+<div class="box49">
+<div class="box50">
+<span class="box51"><i class="fa-solid fa-crown box52"></i> T-Shirt.akh 2026 Collection</span>
+<h1 class="box53">Redefining Style With <span>T-Shirt.akh</span></h1>
+<p class="box54">Crafted in 2026 by T-Shirt.akh. Engineered from 100% organic heavy Supima cotton with 300 GSM durability and fade-resistant tech.</p>
+<div class="box55">
+<a href="#collections" class="box56">Explore Catalog</a>
+<a href="#interactive" class="box57">Studio Configurator</a>
+</div>
+</div>
+<div class="box58">
+<div class="box59">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjOVy-_yQ4Q9d9FWJeP-qymoEtJ1nkYgjGRTilzVx-ompO8DeKFd-pRE&s=10" alt="" class="box60">
+</div>
+</div>
+</div>
+</section>
+
+<section class="box61 scroll-reveal" id="about">
+<div class="box62">
+<span class="box63">Craftsmanship & Durability</span>
+<h2 class="box64">Built to Last by T-Shirt.akh (2026)</h2>
+<p class="box65">Every garment released in our 2026 lineup undergoes extreme stress-testing to guarantee lifetime resilience.</p>
+</div>
+<div class="box66">
+<div class="box67">
+<h3 class="box68">100% Organic Supima</h3>
+<p class="box69">Pure organic fibers ensuring supreme softness against your skin without synthetic irritation.</p>
+</div>
+<div class="box70">
+<h3 class="box71">300 GSM Heavyweight</h3>
+<p class="box72">High-density tight weave that resists mechanical stretching, tearing, and shrinking after washing.</p>
+</div>
+<div class="box73">
+<h3 class="box74">Fade-Resistant Tech</h3>
+<p class="box75">Advanced reactive dye locks in colors permanently, protecting against UV rays and repeated laundry cycles.</p>
+</div>
+</div>
+</section>
+
+<section class="box76 scroll-reveal" id="livezone">
+<div class="box77">
+<span class="box78"><i class="fa-solid fa-bolt box79"></i> Interactive Hologram Preview</span>
+<h2 class="box80">Test Your Custom Name & Neon Glow Effect</h2>
+<p class="box81">Type any text below to instantly project it onto the futuristic T-Shirt hologram simulator.</p>
+</div>
+<div class="box82">
+<div class="box83">
+<div class="box84" id="hologramShirt">
+<div class="box85" id="projectedText">T-SHIRT.AKH</div>
+<div class="box86"></div>
+</div>
+</div>
+<div class="box87">
+<h3 class="box88">Hologram Settings</h3>
+<div class="box89">
+<label class="box90">Custom Text Projector</label>
+<input type="text" class="box91" id="holoTextInput" value="T-SHIRT.AKH" maxlength="16">
+</div>
+<div class="box92">
+<label class="box93">Neon Glow Color Theme</label>
+<div class="box94">
+<button class="box95 active" data-color="#6366f1" style="background:#6366f1;"></button>
+<button class="box96" data-color="#ec4899" style="background:#ec4899;"></button>
+<button class="box97" data-color="#06b6d4" style="background:#06b6d4;"></button>
+<button class="box98" data-color="#f59e0b" style="background:#f59e0b;"></button>
+<button class="box99" data-color="#10b981" style="background:#10b981;"></button>
+</div>
+</div>
+<div class="box100">
+<button class="box101 action-btn" id="saveHologramCartBtn">Add Hologram Edition to Cart ($169)</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="box102 scroll-reveal" id="interactive">
+<div class="box103">
+<span class="box104">Studio Showcase</span>
+<h2 class="box105">Interactive Garment Studio</h2>
+</div>
+<div class="box106">
+<div class="box107">
+<div class="box108" id="canvasContainer">
+<canvas class="box109" id="tshirtCanvas" width="340" height="340"></canvas>
+<div class="box110">
+<button class="box111" id="toggleRotateBtn"><i class="fa-solid fa-pause"></i> Pause</button>
+<button class="box112" id="resetRotateBtn"><i class="fa-solid fa-arrows-rotate"></i> Reset</button>
+</div>
+</div>
+</div>
+<div class="box113">
+<h3 class="box114">Configurator Controls</h3>
+<div class="box115">
+<label class="box116">Garment Base Color</label>
+<div class="box117">
+<button class="box118 active" data-color="#111116" style="background: #111116;"></button>
+<button class="box119" data-color="#ffffff" style="background: #ffffff;"></button>
+<button class="box120" data-color="#4f46e5" style="background: #4f46e5;"></button>
+<button class="box121" data-color="#e11d48" style="background: #e11d48;"></button>
+<button class="box122" data-color="#059669" style="background: #059669;"></button>
+</div>
+</div>
+<div class="box123">
+<label class="box124">Print Graphic</label>
+<div class="box125">
+<button class="box126 active" data-print="cyber">Cyber Skull</button>
+<button class="box127" data-print="crest">Gold Crest</button>
+<button class="box128" data-print="neon">Neon Wave</button>
+<button class="box129" data-print="none">Plain</button>
+</div>
+</div>
+<div class="box130">
+<label class="box131">Select Size</label>
+<div class="box132">
+<button class="box133" data-size="S">S</button>
+<button class="box134 active" data-size="M">M</button>
+<button class="box135" data-size="L">L</button>
+<button class="box136" data-size="XL">XL</button>
+<button class="box137" data-size="XXL">XXL</button>
+</div>
+</div>
+<div class="box138">
+<span class="box139">$149.00</span>
+<button class="box140 action-btn" id="addCustomStudioBtn">Add Custom Design</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="box141 scroll-reveal" id="collections">
+<div class="box142">
+<span class="box143">Boutique Lineup (2026 Edition)</span>
+<h2 class="box144">Curated Apparel Collection</h2>
+<p class="box145">All items manufactured by T-Shirt.akh featuring 300 GSM Supima cotton and fade-proof prints.</p>
+</div>
+
+<div class="box146" id="productGrid">
+
+<div class="box147" data-name="Obsidian Heavyweight Tee" data-price="129.00" data-img="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&q=80">
+<div class="box148">
+<button class="box149 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box150"></i></button>
+<img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&q=80" alt="" class="box151">
+</div>
+<div class="box152">
+<h3 class="box153">Obsidian Heavyweight Tee</h3>
+<p class="box154">300 GSM Supima Cotton, T-Shirt.akh 2026</p>
+<div class="box155">
+<span class="box156">$129.00</span>
+<button class="box157 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+<div class="box158" data-name="Cybernetic Metallic Tee" data-price="189.00" data-img="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&q=80">
+<div class="box159">
+<button class="box160 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box161"></i></button>
+<img src="https://i.pinimg.com/564x/4e/65/37/4e65374bb87bec7d9f8f24493a4d5d1b.jpg" alt="" class="box162">
+</div>
+<div class="box163">
+<h3 class="box164">Cybernetic Metallic Tee</h3>
+<p class="box165">Reflective Foil Edition, T-Shirt.akh 2026</p>
+<div class="box166">
+<span class="box167">$189.00</span>
+<button class="box168 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+<div class="box169" data-name="Minimalist Pure Slim Tee" data-price="99.00" data-img="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&q=80">
+<div class="box170">
+<button class="box171 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box172"></i></button>
+<img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&q=80" alt="" class="box173">
+</div>
+<div class="box174">
+<h3 class="box175">Minimalist Pure Slim Tee</h3>
+<p class="box176">Athletic Tailored Fit, T-Shirt.akh 2026</p>
+<div class="box177">
+<span class="box178">$99.00</span>
+<button class="box179 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+<div class="box180" data-name="Vortex Acid Wash Tee" data-price="159.00" data-img="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80">
+<div class="box181">
+<button class="box182 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box183"></i></button>
+<img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80" alt="" class="box184">
+</div>
+<div class="box185">
+<h3 class="box186">Vortex Acid Wash Tee</h3>
+<p class="box187">Hand-dyed Vintage Wash, T-Shirt.akh 2026</p>
+<div class="box188">
+<span class="box189">$159.00</span>
+<button class="box190 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+<div class="box191" data-name="Urban Streetwear Hoodie Tee" data-price="145.00" data-img="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=800&q=80">
+<div class="box192">
+<button class="box193 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box194"></i></button>
+<img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=800&q=80" alt="" class="box195">
+</div>
+<div class="box196">
+<h3 class="box197">Urban Streetwear Tee</h3>
+<p class="box198">Relaxed Fit Luxury, T-Shirt.akh 2026</p>
+<div class="box199">
+<span class="box200">$145.00</span>
+<button class="box201 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+<div class="box202" data-name="Royal Navy Edition Tee" data-price="115.00" data-img="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&q=80">
+<div class="box203">
+<button class="box204 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box205"></i></button>
+<img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&q=80" alt="" class="box206">
+</div>
+<div class="box207">
+<h3 class="box208">Royal Navy Edition Tee</h3>
+<p class="box209">Breathable Soft Cotton, T-Shirt.akh 2026</p>
+<div class="box210">
+<span class="box211">$115.00</span>
+<button class="box212 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+<div class="box213" data-name="Eclipse Carbon Fiber Tee" data-price="175.00" data-img="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&q=80">
+<div class="box214">
+<button class="box215 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box216"></i></button>
+<img src="https://cdn.pixabay.com/photo/2024/04/29/04/21/tshirt-8726716_640.jpg" alt="" class="box217">
+</div>
+<div class="box218">
+<h3 class="box219">Eclipse Carbon Fiber Tee</h3>
+<p class="box220">Dark Matte Weave, T-Shirt.akh 2026</p>
+<div class="box221">
+<span class="box222">$175.00</span>
+<button class="box223 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+<div class="box224" data-name="Solar Flare Neon Tee" data-price="135.00" data-img="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&q=80">
+<div class="box225">
+<button class="box226 like-btn" title="Add to Wishlist"><i class="fa-solid fa-heart box227"></i></button>
+<img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3BmLW1vY2t1cDExLWppcjg5MDEtamlyYS1sLmpwZw.jpg" alt="" class="box228">
+</div>
+<div class="box229">
+<h3 class="box230">Solar Flare Neon Tee</h3>
+<p class="box231">Ultraviolet Glow, T-Shirt.akh 2026</p>
+<div class="box232">
+<span class="box233">$135.00</span>
+<button class="box234 action-btn addToCartBtn">Add</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="box235 scroll-reveal" id="fitcalc">
+<div class="box236">
+<span class="box237">Precision Sizing</span>
+<h2 class="box238">Age & Size Fit Guide / BMI Calculator</h2>
+<p class="box239">Find your exact standard size based on age and body measurements, or calculate your BMI.</p>
+</div>
+<div class="box240">
+<div class="box241">
+<h3 class="box242">Age & Standard Size Calculator</h3>
+<div class="box243">
+<label class="box244">Enter Age: <span class="box245" id="ageVal">25</span> years</label>
+<input type="range" class="box246" id="ageSlider" min="12" max="70" value="25">
+</div>
+<div class="box247">
+<label class="box248">Chest Width (inches): <span class="box249" id="chestVal">38</span> in</label>
+<input type="range" class="box250" id="chestSlider" min="30" max="50" value="38">
+</div>
+<div class="box251">
+<div class="box252">Recommended Standard Size:</div>
+<div class="box253" id="recommendedSizeOutput">M</div>
+</div>
+</div>
+
+<div class="box254">
+<h3 class="box255">Body Mass Index (BMI) Calculator</h3>
+<div class="box256">
+<label class="box257">Weight (kg): <span class="box258" id="weightVal">70</span> kg</label>
+<input type="range" class="box259" id="weightSlider" min="40" max="140" value="70">
+</div>
+<div class="box260">
+<label class="box261">Height (cm): <span class="box262" id="heightVal">175</span> cm</label>
+<input type="range" class="box263" id="heightSlider" min="140" max="210" value="175">
+</div>
+<div class="box264">
+<div class="box265">Your BMI Score:</div>
+<div class="box266" id="bmiOutput">22.9 (Normal)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="box267 scroll-reveal" id="contact">
+<div class="box268">
+<span class="box269">Get in Touch</span>
+<h2 class="box270">Contact T-Shirt.akh Studio</h2>
+<p class="box271">Have questions about custom orders or shipping? Drop us a message.</p>
+</div>
+<div class="box272">
+<form class="box273" id="contactForm">
+<div class="box274">
+<input type="text" class="box275" placeholder="Your Name" required>
+</div>
+<div class="box276">
+<input type="email" class="box277" placeholder="Your Email" required>
+</div>
+<div class="box278">
+<textarea class="box279" placeholder="Your Message..." rows="4" required></textarea>
+</div>
+<button type="submit" class="box280 action-btn">Send Message</button>
+</form>
+</div>
+</section>
+
+</main>
+
+<div class="box281" id="wishlistDrawer">
+<div class="box282">
+<div class="box283">
+<h3 class="box284"><i class="fa-solid fa-heart box285"></i> Your Wishlist</h3>
+<button class="box286" id="wishlistCloseBtn"><i class="fa-solid fa-xmark box287"></i></button>
+</div>
+<div class="box288" id="wishlistItemsContainer">
+<p class="box289">Your wishlist is empty.</p>
+</div>
+</div>
+</div>
+
+<div class="box290" id="cartDrawer">
+<div class="box291">
+<div class="box292">
+<h3 class="box293"><i class="fa-solid fa-bag-shopping box294"></i> Shopping Cart</h3>
+<button class="box295" id="cartCloseBtn"><i class="fa-solid fa-xmark box296"></i></button>
+</div>
+
+<div class="box297" id="checkoutStatusNotice" style="display: none;">
+<div class="box298"><span class="box299 status-blue-dot"></span> Thank you For Your Purchase!</div>
+<p class="box300">Your order has been confirmed and is being prepared by T-Shirt.akh.</p>
+</div>
+
+<div class="box301" id="cartItemsContainer">
+<p class="box302">Your cart is empty.</p>
+</div>
+<div class="box303">
+<div class="box304">
+<span class="box305">Subtotal</span>
+<span class="box306" id="cartSubtotal">$0.00</span>
+</div>
+<button class="box307 action-btn" id="checkoutBtn">Proceed To Checkout</button>
+</div>
+</div>
+</div>
+
+<footer class="box308">
+<div class="box309">
+<div class="box310">
+<a href="#" class="box311">T-Shirt<span>.akh</span></a>
+<p class="box312">Delivering ultra-luxurious, tailored garments around the globe with precision engineering and organic materials.</p>
+<div class="box313">
+<a href="#" class="box314"><i class="fa-brands fa-instagram box315"></i></a>
+<a href="#" class="box316"><i class="fa-brands fa-twitter box317"></i></a>
+<a href="#" class="box318"><i class="fa-brands fa-facebook box319"></i></a>
+<a href="#" class="box320"><i class="fa-brands fa-youtube box321"></i></a>
+</div>
+</div>
+
+<div class="box322">
+<h4 class="box323">Quick Navigation</h4>
+<a href="#hero" class="box324">Home</a>
+<a href="#about" class="box325">Quality</a>
+<a href="#livezone" class="box326">Live Effect</a>
+<a href="#interactive" class="box327">Studio</a>
+<a href="#collections" class="box328">Catalog</a>
+<a href="#fitcalc" class="box329">Fit & BMI Guide</a>
+</div>
+
+<div class="box330">
+<h4 class="box331">Customer Care</h4>
+<a href="#" class="box332">Track Order</a>
+<a href="#" class="box333">Returns & Exchanges</a>
+<a href="#" class="box334">Worldwide Express Shipping</a>
+<a href="#" class="box335">FAQ</a>
+</div>
+
+<div class="box336">
+<h4 class="box337">Join VIP Club</h4>
+<p class="box338">Subscribe for limited drops and secret discounts.</p>
+<div class="box339">
+<input type="email" class="box340" placeholder="Enter your email...">
+<button class="box341 action-btn">Join</button>
+</div>
+</div>
+</div>
+
+<div class="box342">
+<p class="box343">@ 2026 akhathanov T-Shirt.akh </p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
